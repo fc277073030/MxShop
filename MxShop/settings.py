@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'user.UserProfile'
 
 # Application definition
 
@@ -40,6 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users.apps.UsersConfig',
+    'DjangoUeditor',
+    'users',
+    'user_operation',
+    'goods',
+    'trade',
 ]
 
 MIDDLEWARE = [
